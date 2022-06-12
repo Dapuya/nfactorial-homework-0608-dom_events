@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
+    <title>music player</title>
+</head>
+<body>
+<div class="background">
+    <video id="video-background" muted loop width="100%">
+        <source src="video.mp4">
+    </video>
+
+    <div class="container" id="container">
+        <div class="header">
+            <h1>Music Player</h1>
+            <button id="btn-change-background" onclick="playVideo()">
+                <i class="fa fa-video " style="color:white; padding:2px;"></i>
+            </button>
+        </div>
+
+        <div class="center">
+            <div >
+                <div class="playpause-track" id="playpause-track" onclick="playPauseTrack()">
+                    <i class="fa fa-play-circle fa-3x"></i>
+                    <img src="" alt="">
+                </div>
+                <audio src="audio1.mp3" id="audio"></audio>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+
+        <div class="track-time">
+            <div id="currentTime"></div>
+            <div id="durationTime"></div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+
+</html>

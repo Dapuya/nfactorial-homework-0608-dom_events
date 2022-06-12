@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin:0;
+    background-color: black;
+}
+
+.container {
+    /* position: relative; */
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+
+    bottom: 1px;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: block;
+}
+.shown {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18%;
+    align-items: center;
+    border: orange 3px double;
+    border-radius: 13px;
+    padding: 0 12px;
+}
+
+
+.center{
+    display: flex;
+    flex-direction: row;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 45%;
+}
+
+#btn-change-background {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+.playpause-track {
+    margin: 30px;
+}
+
+
+.progress-bar {
+    grid-area: four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#progressBar {
+    appearance: none;
+    height: 5px;
+    background: white;
+    width: 57.5%;
+    outline: none;
+    border-radius: 30px;
+}
+
+#progressBar::-webkit-slider-thumb {
+    appearance: none;
+    height: 11px;
+    width: 11px;
+    outline: none;
+    background: #f94c57;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*.track-time {*/
+/*    grid-area: five;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: flex-start;*/
+/*    !* border: 1px solid red; *!*/
+/*}*/
+
+/*#currentTime {*/
+/*    font-family: "Lato", sans-serif;*/
+/*    font-size: 1rem;*/
+/*    color: white;*/
+/*}*/
+
+/*#durationTime {*/
+/*    font-family: "Lato", sans-serif;*/
+/*    font-size: 1rem;*/
+/*    color: #f94c57;*/
+/*    text-shadow: 0 0 15px white;*/
+/*}*/
